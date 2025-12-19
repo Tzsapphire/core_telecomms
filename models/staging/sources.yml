@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: raw
+    database: "core_telecoms"    # your Snowflake DB name
+    schema: "RAW"             # the schema name in your DB
+    tables:
+      - name: AGENTS_DATASET
+        description: "Raw campaign details"
+      
+      - name: CALL_LOGS_DATASET
+        description: "Raw campaign performance metrics"
+       
+      - name: CUSTOMERS_DATASET
+        description: "Raw marketing channels lookup"
+  
+      - name: SOCIAL_DATASET
+        description: "Raw email campaign details"
+ 
+      - name: WEB_FORMS_DATASET
+        description: "Raw email list definitions"
+
